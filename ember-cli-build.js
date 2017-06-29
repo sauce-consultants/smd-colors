@@ -3,7 +3,11 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   var app = new EmberAddon(defaults, {
-    // Add options here
+    sassOptions: {
+      includePaths: [
+        'node_modules/material-design-lite/src',
+      ]
+    },
   });
 
   /*
@@ -12,6 +16,8 @@ module.exports = function(defaults) {
     This build file does *not* influence how the addon or the app using it
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
+
+  //app.import('node_modules/material-design-lite/material.min.js');
 
   return app.toTree();
 };

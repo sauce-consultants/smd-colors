@@ -13,7 +13,7 @@ export default Service.extend({
     'blue',
     'deep-purple',
     'brown',
-  ]
+  ],
   colorFor: function( /*group, value*/ ) {
 
   },

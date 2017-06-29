@@ -1,0 +1,92 @@
+@import "material-design-lite.scss";
+
+body {
+  padding: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.swatch {
+  color  : white;
+  padding: 1rem;
+  margin : 0 0 0.125rem;
+  width  : 100%;
+
+  &--red {
+    background: unquote("rgb(#{$palette-red-400})");
+  }
+
+  &--pink {
+    background: unquote("rgb(#{$palette-pink-400})");
+  }
+
+  &--purple {
+    background: unquote("rgb(#{$palette-purple-400})");
+  }
+
+  &--deep-purple {
+    background: unquote("rgb(#{$palette-deep-purple-400})");
+  }
+
+  &--indigo {
+    background: unquote("rgb(#{$palette-indigo-400})");
+  }
+
+  &--blue {
+    background: unquote("rgb(#{$palette-blue-400})");
+  }
+
+  &--light-blue {
+    background: unquote("rgb(#{$palette-light-blue-400})");
+  }
+
+  &--cyan {
+    background: unquote("rgb(#{$palette-cyan-400})");
+  }
+
+  &--teal {
+    background: unquote("rgb(#{$palette-teal-400})");
+  }
+
+  &--green {
+    background: unquote("rgb(#{$palette-green-400})");
+  }
+
+  &--light-green {
+    background: unquote("rgb(#{$palette-light-green-400})");
+  }
+
+  &--lime {
+    background: unquote("rgb(#{$palette-lime-400})");
+  }
+
+  &--yellow {
+    background: unquote("rgb(#{$palette-yellow-400})");
+  }
+
+  &--amber {
+    background: unquote("rgb(#{$palette-amber-400})");
+  }
+
+  &--orange {
+    background: unquote("rgb(#{$palette-orange-400})");
+  }
+
+  &--deep-orange {
+    background: unquote("rgb(#{$palette-deep-orange-400})");
+  }
+
+  &--brown {
+    background: unquote("rgb(#{$palette-brown-400})");
+  }
+
+  &--amber,
+  &--light-green,
+  &--lime,
+  &--orange,
+  &--yellow {
+    color: rgba(black,0.54);
+  }
+}

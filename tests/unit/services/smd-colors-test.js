@@ -33,7 +33,7 @@ test('it returns the same color for equal values', function(assert) {
   assert.equal(color, 'pink');
 });
 
-test('it returns the different color for different values', function(assert) {
+test('it returns the different color for different values a', function(assert) {
   let service = this.subject(),
     color;
 
@@ -50,7 +50,7 @@ test('it returns the different color for different values', function(assert) {
   assert.equal(color, 'pink');
 });
 
-test('it returns the different color for different values', function(assert) {
+test('it returns the different color for different values b', function(assert) {
   let service = this.subject(),
     color;
 
@@ -61,10 +61,10 @@ test('it returns the different color for different values', function(assert) {
   assert.equal(color, 'orange');
 
   color = service.colorFor('shape', 'square');
-  assert.equal(color, 'yellow');
+  assert.equal(color, 'pink');
 
   color = service.colorFor('shape', 'triangle');
-  assert.equal(color, 'green');
+  assert.equal(color, 'orange');
 });
 
 test('it repeats after exceeding available colors', function(assert) {

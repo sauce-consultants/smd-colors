@@ -9,6 +9,28 @@ This README outlines the details of collaborating on this Ember addon.
 - `npm install`
 - `bower install`
 
+## Usage
+
+Inject service into your route/component
+
+```
+
+colors: Ember.inject.service('smd-colors'),
+```
+
+Use the `colorFor` method to return an assigned color for you're item
+
+```
+
+classModifier: Ember.computed('model.name', function () {
+
+  let value = this.get('model.name'),
+    color = this.get('colors').colorFor('thing', value);
+
+    return 'myclass--'+color;
+}),
+```
+
 ## Running
 
 - `ember serve`
